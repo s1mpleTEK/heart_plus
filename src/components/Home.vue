@@ -14,7 +14,7 @@
             Grrrrrrrr!
         <p v-else-if="love > 1">
             You sent love to {{ love }} people!
-        <p v-else>
+        <p v-else-if="love == 0">
             Give some love
         </p>
         <button v-on:click="give_loves()">
