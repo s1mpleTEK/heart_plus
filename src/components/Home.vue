@@ -50,7 +50,7 @@ export default {
 
     methods: {
         give_loves() {
-            this.love=6969;
+            this.love++;
         },
         give_loves_v2() {
             this.love = this.love + 5;
