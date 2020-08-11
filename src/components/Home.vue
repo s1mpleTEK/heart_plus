@@ -6,14 +6,12 @@
         <h1 v-if="love >= 1000000000000">
             Now, go get a life and stop develop this stupid bot dude -_-
         </h1>
+        <p v-if="love == 1">
+            You sent love to {{ love }} person!
         <p v-if="love == 6969">
             You sent love to {{ love }} people!
             <br>
             Grrrrrrrr!
-        </p>
-        <p v-if="love == 1">
-            You sent love to {{ love }} person!
-        </p>
         <p v-else-if="love > 1">
             You sent love to {{ love }} people!
         <p v-else>
@@ -52,7 +50,7 @@ export default {
 
     methods: {
         give_loves() {
-            this.love++;
+            this.love=6969;
         },
         give_loves_v2() {
             this.love = this.love + 5;
